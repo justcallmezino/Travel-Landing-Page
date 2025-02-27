@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Island Travels | Responsive Landing Page Responsive Website">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css"/>
+
+    <title>Island Travels</title>
+  </head>
+  <body>
+    <!-- HEADER PROPERTIES -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav__logo">Travel</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Destinations</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Hotels</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <img src="images/menu-btn-white.png" alt="">
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN PROPERTIES -->
+    <main class="main">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- ISLANDS 1 -->
+          <section class="islands swiper-slide">
+            <img src="images/borabora.jpg" alt="" class="islands__bg">
+
+            <div class="islands__container bd-container">
+              <div class="islands__data">
+                <h2 class="islands__subtitle">Islands</h2>
+                <h1 class="islands__title">Bora Bora</h1>
+                <p class="islands__desc">Small South Pacific Island northeast of Tahiti in French Polynesia surrounded by motus</p>
+                <a href="#" class="islands__btn">Explore<img src="images/right-arrow.png" alt=""></a>
+              </div>
+
+              <div class="islands__video">
+                <div class="islands__video-content">
+                  <img src="images/play-btn.png" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ISLANDS 2 -->
+          <section class="islands swiper-slide">
+            <img src="images/bali.jpg" alt="" class="islands__bg">
+
+            <div class="islands__container bd-container">
+              <div class="islands__data">
+                <h2 class="islands__subtitle">Islands</h2>
+                <h1 class="islands__title">Bali</h1>
+                <p class="islands__desc">It is an Indonesian Island known and Beautiful for its lush active volcano mountains</p>
+                <a href="#" class="islands__btn">Explore<img src="images/right-arrow.png" alt=""></a>
+              </div>
+
+              <div class="islands__video">
+                <div class="islands__video-content">
+                  <img src="images/play-btn.png" alt="" class="islands__video-icon">
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- ISLANDS 3 -->
+          <section class="islands swiper-slide">
+            <img src="images/palawan.jpg" alt="" class="islands__bg">
+
+            <div class="islands__container bd-container">
+              <div class="islands__data">
+                <h2 class="islands__subtitle">Islands</h2>
+                <h1 class="islands__title">Palawan</h1>
+                <p class="islands__desc">Also known as La Paragua, its is the Largest Island in the province of Palawan</p>
+                <a href="#" class="islands__btn">Explore<img src="images/right-arrow.png" alt=""></a>
+              </div>
+
+              <div class="islands__video">
+                <div class="islands__video-content">
+                  <img src="images/play-btn.png" alt="" class="islands__video-icon">
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- ISLANDS POP UP -->
+          <div class="islands__popup" id="popup">
+            <div class="islands__popup-close" id="popup-close">
+              <img src="images/close-x.png" alt="">
+            </div>
+
+            <iframe class="islands__popup-video" src="https://www.youtube.com/embed/JrU6bsuNU7Y?si=tOzAFDrhc1zcWpVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="controls mySwiper2">
+        <div class="controls__container swiper-wrapper">
+          <img src="images/borabora.jpg" alt="" class="controls__images swiper-slide">
+          <img src="images/bali.jpg" alt="" class="controls__images swiper-slide">
+          <img src="images/palawan.jpg" alt="" class="controls__images swiper-slide">
+        </div>
+      </div>
+    </main>
+
+
+    <!-- GSAP JS -->
+    <script src="javascript/gsap.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="javascript/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="javascript/main.js"></script>
+
+  </body>
+</html>
